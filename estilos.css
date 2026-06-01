@@ -240,7 +240,10 @@ footer .redes a {
 }
 
 #miniaturas {
+<<<<<<< HEAD
     width: 100vw;
+=======
+>>>>>>> f263f35054f3270bc284e25351be215a9224614d
     padding: 90px 0;
     display: flex;
     justify-content: center;
@@ -426,6 +429,7 @@ button {
 
 /*media queries*/
 
+<<<<<<< HEAD
 @media screen and (max-width: 500px) {
 
     * {
@@ -467,3 +471,6 @@ button {
     }
 
 }
+=======
+@media queries
+>>>>>>> f263f35054f3270bc284e25351be215a9224614d
