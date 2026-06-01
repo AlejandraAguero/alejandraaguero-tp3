@@ -240,6 +240,7 @@ footer .redes a {
 }
 
 #miniaturas {
+    width: 100vw;
     padding: 90px 0;
     display: flex;
     justify-content: center;
@@ -425,4 +426,44 @@ button {
 
 /*media queries*/
 
-@media queries
+@media screen and (max-width: 500px) {
+
+    * {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+
+    p{
+    font-size: 0.8rem;
+    }
+
+    #intro {
+        flex-direction: column;
+    }
+
+    #banner{
+        visibility: hidden;
+    }
+
+    #intro #textos {
+        text-align: center;
+        background-color: #440687;
+    }
+
+    #intro #foto{
+        width: 20px;
+        height: 30px;
+    }
+
+}
