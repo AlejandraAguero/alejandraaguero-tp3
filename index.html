@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Alejandra Agüero</title>
+    <link rel="icon" type="image/x-icon" href="img/logo_estrella.ico">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function cambiarDisplay(visibilidadNueva) {
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria() {
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria() {
+            cambiarDisplay('none')
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo-ael.svg" alt="Logotipo Ael" width="60" height="60" /></a>
+        <nav>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="#">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Portfolio</h1>
+            <h3>Diseño grafico</h3>
+            <img src="img/estrella-icono.svg" alt="" width="70" height="65" />
+        </section>
+
+        <section id="banner">
+            <p>Branding</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Editorial</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Social Media</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Branding</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Editorial</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Social Media</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Branding</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Editorial</p>
+        </section>
+
+        <article id="intro">
+            <div id="textos">
+                <h2>¡Hola, soy Ale!</h2>
+                <p>Estudiante de la Licenciatura en Diseño y Comunicación visual, trabajo actualmente desarrollando
+                    branding e identidad visual de marcas y emprendimientos.</p>
+            </div>
+            <div id="foto">
+                <img src="img/foto-ale.svg" alt="" width="670" height="695" />
+            </div>
+        </article>
+
+        <div id="titulos">
+            <img src="img/sol-icono.svg" alt="" width="80" height="80" />
+            <h2>Mis últimos proyectos</h2>
+            <p>Ver todos</p>
+        </div>
+
+        <section id="miniaturas">
+            <a href="#foto-1"><img src="img/galeria/foto-1-thumbnail.jpg" width="400px" height="500px"
+                    alt="Casa Foresta" onClick="mostrarGaleria()"></a>
+            <a href="#foto-2"><img src="img/galeria/foto-2-thumbnail.jpg" width="400px" height="500px" alt="Piña Colada"
+                    onClick="mostrarGaleria()"></a>
+            <a href="#foto-3"><img src="img/galeria/foto-3-thumbnail.jpg" width="400px" height="500px"
+                    alt="Exponiendo Tipografia" onClick="mostrarGaleria()"></a>
+        </section>
+
+        <section id="galeria">
+            <div id="fondo-galeria">
+                <ul id="galeria-oculta">
+                    <li class="fraccion-galeria" id="foto-1">
+                        <a href="#" class="primer-ultima-flecha"> <img src="img/galeria/back.svg" width="20px"
+                                height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-2"><img src="img/galeria/next.svg" width="20px" height="30px"
+                                alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-2">
+                        <a href="#foto-1"><img src="img/galeria/back.svg" width="20px" height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-3"><img src="img/galeria/next.svg" width="20px" height="30px"
+                                alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-3">
+                        <a href="#foto-2"><img src="img/galeria/back.svg" width="20px" height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#" class="primer-ultima-flecha"><img src="img/galeria/next.svg" width="20px"
+                                height="30px" alt="Siguiente"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="contacto">
+            <div>
+                <img src="img/logo-ael-blanco.svg" alt="" width="165" height="165" />
+            </div>
+            <div class="info">
+                <ul>
+                    <li>holaalejandra@gmail.com</li>
+                    <li>0 11 0000 - 0000</li>
+                    <li>Buenos Aires, Argentina</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="redes">
+                    <ul>
+                        <li><img src="img/icono-behance.svg" alt="" width="32" height="32" /><a
+                                href="#">alejandraaguero16</a></li>
+                        <li><img src="img/icono-instagram.svg" alt="" width="32" height="32" /><a
+                                href="#">aeldesign_</a></li>
+                        <li><img src="img/icono-linkedin.svg" alt="" width="32" height="32" /><a href="#">Alejandra
+                                Agüero</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <ul>
+
+        </div>
+        <div>
+            <img src="img/linea-blanca-larga.svg" alt="" width="1270" height="32" />
+        </div>
+        <h4>Cátedra Wischñevsky 2026 | Derechos reservados</h4>
+
+    </footer>
+</body>
+
+</html>
