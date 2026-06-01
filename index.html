@@ -2,138 +2,149 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>CV Aguero Alejandra</title>
-    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <meta charset="UTF-8" />
+    <title>Portfolio Alejandra Agüero</title>
     <link rel="icon" type="image/x-icon" href="img/logo_estrella.ico">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Darker+Grotesque:wght@300..900&display=swap');
-    </style>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function cambiarDisplay(visibilidadNueva) {
+            document.getElementById("galeria").style.display = visibilidadNueva
+        }
+        function mostrarGaleria() {
+            cambiarDisplay('flex')
+        }
+        function ocultarGaleria() {
+            cambiarDisplay('none')
+        }
+    </script>
 </head>
-<!--  -->
 
 <body>
-
     <header>
-        <img src="img/logo_estrella.ico" alt="logotipo" width="40px" height="40px">
+        <a href="index.html"><img src="img/logo-ael.svg" alt="Logotipo Ael" width="60" height="60" /></a>
         <nav>
-            <a href="#hero">Sobre mí</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="#">Sobre mí</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </header>
 
     <main>
         <section id="hero">
-            <h1>Alejandra Agüero</h1>
-            <h2>Estudiante de Lic. Diseño y Comunicación Visual</h2>
-            <p> Me considero una persona creativa, muy apasionada por el diseño y el arte; con muchas ganas de crecer
-                profesionalmente. Actualmente trabajo en una agencia de Marketing Digital y también de manera freelance
-                en mi emprendimiento Ael Design, donde desarrollo Branding y Social Media.</p>
-            <img src="img/fotoperfil.png" alt="Foto perfil CV" width="400px" height="600px" />
+            <h1>Portfolio</h1>
+            <h3>Diseño grafico</h3>
+            <img src="img/estrella-icono.svg" alt="" width="70" height="65" />
         </section>
 
-        <article id="experiencia">
-            <div>
-                <img src="img/sol_icono.png" alt="" width="50px" height="50px" />
-                <h2>Experiencia laboral</h2>
+        <section id="banner">
+            <p>Branding</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Editorial</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Social Media</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Branding</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Editorial</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Social Media</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Branding</p>
+            <img src="img/linea-blanca-corta.svg" alt="" width="150" height="3" />
+            <p>Editorial</p>
+        </section>
+
+        <article id="intro">
+            <div id="textos">
+                <h2>¡Hola, soy Ale!</h2>
+                <p>Estudiante de la Licenciatura en Diseño y Comunicación visual, trabajo actualmente desarrollando
+                    branding e identidad visual de marcas y emprendimientos.</p>
             </div>
-            <ul>
-                <li>
-                    <img src="img/fumobravo_logotipo.jpg" alt="" width="150px" height="150px" />
-                    <h3>Fumo Bravo</h3>
-                    <h4>Brand Manager & Content Creator</h4>
-                    <p>2024 - Actualidad Creación de piezas gráficas para redes sociales | Branding | Logotipos</p>
-                </li>
-
-                <li>
-                    <img src="img/fica_logotipo.jpg" alt="" width="150px" height="150px" />
-                    <h3>Fica Team</h3>
-                    <h4>Brand Manager & Content Creator</h4>
-                    <p>2022 - 2024 Creación de piezas gráficas para redes sociales | Branding | Logotipos</p>
-                </li>
-
-                <li>
-                    <img src="img/aeldesing_logotipo.jpg" alt="" width="150px" height="150px" />
-                    <h3>Ael Design</h3>
-                    <h4>Diseñadora Gráfica Freelance</h4>
-                    <p>2019 - 2025 Logotipos | Papelería y Cartelería | Branding | RRSS | Brochure</p>
-                </li>
-            </ul>
+            <div id="foto">
+                <img src="img/foto-ale.svg" alt="" width="670" height="695" />
+            </div>
         </article>
 
-        <article class="formacion">
-            <div>
-                <img src="img/sol_icono.png" alt="" width="50px" height="50px" />
-                <h2>Formación Académica</h2>
+        <div id="titulos">
+            <img src="img/sol-icono.svg" alt="" width="80" height="80" />
+            <h2>Mis últimos proyectos</h2>
+            <p>Ver todos</p>
+        </div>
+
+        <section id="miniaturas">
+            <a href="#foto-1"><img src="img/galeria/foto-1-thumbnail.jpg" width="400px" height="500px"
+                    alt="Casa Foresta" onClick="mostrarGaleria()"></a>
+            <a href="#foto-2"><img src="img/galeria/foto-2-thumbnail.jpg" width="400px" height="500px" alt="Piña Colada"
+                    onClick="mostrarGaleria()"></a>
+            <a href="#foto-3"><img src="img/galeria/foto-3-thumbnail.jpg" width="400px" height="500px"
+                    alt="Exponiendo Tipografia" onClick="mostrarGaleria()"></a>
+        </section>
+
+        <section id="galeria">
+            <div id="fondo-galeria">
+                <ul id="galeria-oculta">
+                    <li class="fraccion-galeria" id="foto-1">
+                        <a href="#" class="primer-ultima-flecha"> <img src="img/galeria/back.svg" width="20px"
+                                height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-2"><img src="img/galeria/next.svg" width="20px" height="30px"
+                                alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-2">
+                        <a href="#foto-1"><img src="img/galeria/back.svg" width="20px" height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#foto-3"><img src="img/galeria/next.svg" width="20px" height="30px"
+                                alt="Siguiente"></a>
+                    </li>
+                    <li class="fraccion-galeria" id="foto-3">
+                        <a href="#foto-2"><img src="img/galeria/back.svg" width="20px" height="30px" alt="Anterior"></a>
+                        <img class="close" src="img/galeria/close.svg" alt="Cerrar" width="30px" height="30px"
+                            onClick="ocultarGaleria()">
+                        <a href="#" class="primer-ultima-flecha"><img src="img/galeria/next.svg" width="20px"
+                                height="30px" alt="Siguiente"></a>
+                    </li>
+                </ul>
             </div>
-
-            <ul>
-                <li>
-                    <img src="img/unla_logotipo" alt="" width="150px" height="150px" />
-                    <h3>Lic. en Diseño y Comunicación Visual</h3>
-                    <p>Universidad Nacional de Lanús 2021 - Act. | 4° Año</p>
-                </li>
-
-                <li>
-                    <img src="img/tecnica_logotipo.jpg" alt="" width="150px" height="150px" />
-                    <h3>Técnico en Programación</h3>
-                    <p>E.E.S.T N°2 Ceferino Namuncurá 2013 - 2019</p>
-                </li>
-            </ul>
-
-        </article>
-
-        <section id="proyectos">
-            <h2>Proyectos destacados </h2>
-
-            <div class="efecto1">
-                <img src="img/corazon_icono.png" alt="" width="35px" height="30px" />
-                <div class="info">
-                    <h3>Piña Colada</h3>
-                    <p>Sistema de identidad</p>
-                    <p>Introducción al lettering</p>
-                </div>
-            </div>
-
-            <div class="efecto2">
-                <img src="img/corazon_icono.png" alt="" width="35px" height="30px" />
-                <div class="info">
-                    <h3>Pequeñas Travesuras</h3>
-                    <p>Sistema de identidad</p>
-                    <p>Ilustración de personajes</p>
-                </div>
-
         </section>
     </main>
 
-    <article class="volver">
-        <img src="img/flecha_icono.png" alt="" width="25px" height="25px" />
-        <a href="#hero">volver arriba</a>
-        <img src="img/flecha_icono.png" alt="" width="25px" height="25px" />
-    </article>
+    <footer>
+        <div id="contacto">
+            <div>
+                <img src="img/logo-ael-blanco.svg" alt="" width="165" height="165" />
+            </div>
+            <div class="info">
+                <ul>
+                    <li>holaalejandra@gmail.com</li>
+                    <li>0 11 0000 - 0000</li>
+                    <li>Buenos Aires, Argentina</li>
+                </ul>
+            </div>
+            <div class="info">
+                <div class="redes">
+                    <ul>
+                        <li><img src="img/icono-behance.svg" alt="" width="32" height="32" /><a
+                                href="#">alejandraaguero16</a></li>
+                        <li><img src="img/icono-instagram.svg" alt="" width="32" height="32" /><a
+                                href="#">aeldesign_</a></li>
+                        <li><img src="img/icono-linkedin.svg" alt="" width="32" height="32" /><a href="#">Alejandra
+                                Agüero</a></li>
 
+                    </ul>
+                </div>
+            </div>
+            <ul>
 
+        </div>
+        <div>
+            <img src="img/linea-blanca-larga.svg" alt="" width="1270" height="32" />
+        </div>
+        <h4>Cátedra Wischñevsky 2026 | Derechos reservados</h4>
 
-
-    <footer id="contacto">
-        <ul>
-            <li>
-                <img src="img/instagram_icon.webp" alt="Icono Instagram" width="20px" height="20px" />
-                <a href="https://www.instagram.com/aeldesign_/" target="_blank">@aeldesign_</a>
-            </li>
-            <li>
-                <img src="img/behance_icon.png" alt="Icono correo" width="20px" height="20px" />
-                <a href="https://www.behance.net/alejandraaguero16/" target="_blank">Alejandra Agüero</a>
-            </li>
-            <li>
-                <img src="img/ubicacion_icon.webp" alt="Icono ubicacion" width="20px" height="20px" />
-                <a href=" #">Glew, Buenos Aires</a>
-            </li>
-        </ul>
-        <p>Cátedra Wischñevsky 2026 | Derechos reservados</p>
     </footer>
-
 </body>
 
 </html>
